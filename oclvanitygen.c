@@ -57,6 +57,8 @@ usage(const char *name)
 "-i            Case-insensitive prefix search\n"
 "-k            Keep pattern and continue search after finding a match\n"
 "-1            Stop after first match\n"
+"-R            Generate rubycoin address\n"
+"-C            Generate cannacoin address\n"
 "-N            Generate namecoin address\n"
 "-T            Generate bitcoin testnet address\n"
 "-X <version>  Generate address with the given version\n"
@@ -139,6 +141,10 @@ main(int argc, char **argv)
 			break;
 		case '1':
 			only_one = 1;
+			break;
+		case 'C':
+			addrtype = 28;
+			privtype = 180;
 			break;
 		case 'N':
 			addrtype = 52;
