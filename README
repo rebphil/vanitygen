@@ -46,6 +46,20 @@ Pattern: 1Love
 Address: 1LoveRg5t2NCDLUZh6Q8ixv74M5YGVxXaN
 Privkey: 5JLUmjZiirgziDmWmNprPsNx8DYwfecUNk1FQXmDPaoKB36fX1o
 
+Cannacoin example:
+% ./vanitygen -Cr ^C[aA][nN][nN][aA]
+Pattern: ^C[aA][nN][nN][aA]                                                    
+Address: CaNNAztLNqEsKQCq48o2FjE7nMPPPguzpv
+Privkey: 6ELirmYLxvPbzxif6wE7beAKNFAwe4fhQ3xUMbwko8Dv6nyr3zw
+
+
+Rubycoin example:
+% ./vanitygen -Rr ^R[uU][bB][yY]
+Pattern: ^R[uU][bB][yY]                                                        
+Address: RubyMpuZnNG3LVtwQDrLxjKuFFDa7vR2sC
+Privkey: 7LPyXXeUZbS9QeQ2EfKwmEP1YYtkCTRumVTYGFWwRWyyn6HM1A2
+
+
 Currently, it is difficult to import the private key into bitcoin.  
 Sipa's showwallet branch has a new command called "importprivkey" that 
 accepts the base-58 encoded private key.  Vanitygen has been tested to 
